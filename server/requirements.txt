@@ -1,0 +1,11 @@
+pyvirtualdisplay
+xlrd
+flask~=2.0.2
+wget
+xmltodict
+flask-cors
+flask_restx
+numpy
+pandas
+Pillow~=8.1.0
+Werkzeug~=2.0.2
