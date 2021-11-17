@@ -23,13 +23,15 @@ def register():
 @recognition_api.route('/identification', methods=['GET'])
 def identification():
     # Todo identification with all face bank
+    # Todo: give url and id in this response
+    
     body = {'name': 'Seungmin', 'score': 99.9}
     return make_response(SUCCESS, body)
 
 
 @recognition_api.route('/verification', methods=['GET'])
 def verification():
-    name = request.args["name"]
+    name = request.args["id"]
     # Todo verification with name.jpg
     body = {'result': 'MATCH', 'score': 99.9}
     return make_response(SUCCESS, body)
